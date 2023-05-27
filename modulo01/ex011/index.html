@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em html 5</title>
+</head>
+<body>
+
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="Imagem flexivel">
+
+    </picture>
+    <br><br>
+    <hr><hr><hr>
+    <h1>Colocando áudio no seu site</h1>
+    <h2>Reproduzindo áudio</h2><br>
+    <p>Vamos aprender a reproduzir áudios em HTML 5.</p>
+    <!--<audio src="midia/SnapSave.io - The Freaks (320 kbps).mp3" controls autoplay></audio>
+    Outra maneira de adicionar audios, os navegadores suportam os arquivos .mp3, .wave e .ogg-->
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/SnapSave.io - The Freaks (320 kbps).mp3" type="audio/mpeg">
+        <source src="midia/SnapSave.io - The Freaks (320 kbps).wav" type="audio/wav">
+        <source src="midia/SnapSave.io - The Freaks (320 kbps).ogg" type="audio/ogg">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/SnapSave.io - The Freaks (320 kbps).mp3">Clique aqui para baixar o arquivo MP3</a></p>
+
+    </audio>
+    <br>
+
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <hr>
+    <!-- <video src="midia/Robin S - Show Me Love (Extended Version) Original Video.mp4" width="350" controls autoplay></video> -->
+
+    <!-- A seguir Maneira bem cara para hospedagem de vídeos no site -->
+    <video width="360" poster="Imagens/foto-perfil-guanabara.png" controls autoplay>
+        <source src="midia/Robin S - Show Me Love (Extended Version) Original Video.mp4" type="video/mp4">
+        <source src="midia/Robin S - Show Me Love (Extended Version) Original Video.ogv" type="video/ogg">
+        <source src="midia/Robin S - Show Me Love (Extended Version) Original Video.m4v" type="video/mp4">
+    </video><br><br>
+    <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+    <br>
+    <hr><hr><hr>
+    <!--A seguir Maneira barata para hospedar videos no site-->
+
+    <h1>Inserindo vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ehFPSvyzV7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h1>Inserindo vídeo do Vimeo</h1>
+    <div style="padding:26.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/353266666?h=649971cf20&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Retrospectiva Comemora&amp;ccedil;&amp;atilde;o dia dos Pais"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+
+
+</body>
+</html>

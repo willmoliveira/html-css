@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+
+           
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas:
+                cm, mm, in (polegada), px, pt, pc (paica)
+
+            Medidas Relativas:
+            em, ex, rem, vw, vh, %
+            16px geralmente = 1em
+            */
+            font-size: 1em ; 
+            font-weight: normal;
+            /* lighter, normal, bold, bolder e também vai de 100 à 900*/
+        } 
+        h1{
+            /* shorthand font
+            - font-style -> font-weight -> font-size -> font-family
+
+            font-family: "worksans", sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+            font: italic bolder 3em "work Sans", sans-serif;
+        }
+        h2{
+            font: bold 2em "work Sans";
+        }
+          
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi deleniti quod, quaerat est reiciendis similique magni laudantium. Vel quo eum fugiat quis? Dicta quam veritatis repellat tempore accusantium soluta rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis laboriosam accusamus aut maxime recusandae, quasi perspiciatis sunt aperiam dolores! Animi praesentium ab maiores ipsum cupiditate? Optio excepturi temporibus illo pariatur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A laborum blanditiis maxime ex. Illo quia doloremque, maxime facilis eos veniam explicabo tempora unde aliquid! Cumque vitae omnis voluptatum ducimus temporibus!</p>
+    <h2>Subtitulo do exercicio</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet eum laudantium repellat unde. Dignissimos assumenda asperiores voluptatibus ea, ab sint eaque eos ex nobis quia placeat accusamus, quisquam excepturi modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quia accusantium eaque corrupti, officiis iste molestias delectus officia cum perferendis odio modi, ad aliquam ipsa dolores quae! Praesentium, odio nihil?</p>
+    
+</body>
+</html>
